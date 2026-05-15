@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Satarupa ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Poppins;overflow:hidden;background:black;}
+
+.container{height:100vh;overflow-y:scroll;scroll-snap-type:y mandatory;}
+.section{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;scroll-snap-align:start;position:relative;text-align:center;}
+
+/* ================= SECTION 1 ================= */
+#sec1{
+background:radial-gradient(circle,#000814,#001d3d);
+color:white;
+overflow:hidden;
+}
+
+.main-title{
+position:absolute;
+top:30px;
+font-size:55px;
+font-weight:bold;
+}
+
+.clock{
+width:200px;
+margin-top:120px;
+}
+
+#count{
+font-size:80px;
+margin-top:20px;
+}
+
+#btn1{
+position:absolute;
+bottom:40px;
+display:none;
+}
+
+/* POPUPS */
+.popup{
+position:absolute;
+font-size:25px;
+animation:pop 3s linear infinite;
+}
+@keyframes pop{
+0%{transform:translateY(100vh);opacity:0}
+50%{opacity:1}
+100%{transform:translateY(-100px);opacity:0}
+}
+
+/* ================= SECTION 2 ================= */
+#sec2{background:#ffb6c1;}
+
+.note{
+width:300px;
+background:#fffaf0;
+padding:30px;
+border-radius:10px;
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
+transform:rotate(-3deg);
+position:relative;
+}
+
+.pin{
+width:15px;height:15px;background:red;border-radius:50%;
+position:absolute;top:-10px;left:50%;transform:translateX(-50%);
+}
+
+.teddy{width:120px;}
+
+.title2{
+font-family:'Georgia',serif;
+font-size:28px;
+}
+
+.fire{
+position:absolute;
+width:140px;height:140px;
+background:url('cracker.png') no-repeat center/contain;
+animation:boom 2s infinite;
+}
+.left{left:20px;top:30%;}
+.right{right:20px;top:30%;}
+
+@keyframes boom{
+0%{transform:scale(.5);opacity:0}
+50%{transform:scale(1.2);opacity:1}
+100%{transform:scale(.5);opacity:0}
+}
+
+/* ================= SECTION 3 ================= */
+#sec3{
+background:radial-gradient(circle,#ffc0cb,#ff99cc);
+}
+
+#sec3::before{
+content:"";
+position:absolute;
+width:100%;height:100%;
+background-image:radial-gradient(white 2px,transparent 3px);
+background-size:40px 40px;
+animation:twinkle 2s infinite alternate;
+}
+
+.calendar-box{
+background:rgba(255,255,255,0.2);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+z-index:2;
+}
+
+.calendar-header{
+display:grid;
+grid-template-columns:repeat(7,40px);
+margin-bottom:10px;
+font-weight:bold;
+}
+
+.calendar-grid{
+display:grid;
+grid-template-columns:repeat(7,40px);
+gap:8px;
+}
+
+.day{
+padding:10px;
+background:rgba(255,255,255,0.7);
+border-radius:8px;
+}
+
+.highlight{
+background:#4da6ff;color:pink;
+}
+
+/* ================= SECTION 4 ================= */
+#sec4{background:linear-gradient(#ffc0cb,#ffe6f0);}
+
+.title{
+font-family:'Great Vibes';
+font-size:50px;
+}
+
+.letter-img{
+width:340px;
+cursor:pointer;
+}
+
+.old-letter{
+position:absolute;
+width:75%;
+max-width:550px;
+background:#f5deb3;
+border:5px solid #b8860b;
+padding:25px;
+top:120%;
+opacity:0;
+transition:.8s;
+font-family:serif;
+}
+
+.show{
+top:50%;
+transform:translateY(-50%);
+opacity:1;
+}
+
+.party{
+position:absolute;
+font-size:25px;
+animation:pop 3s linear infinite;
+}
+
+/* ================= SECTION 5 ================= */
+#sec5{
+background:linear-gradient(135deg,#fff3b0,#ffc0cb);
+}
+
+.wood{
+position:absolute;
+width:240px;
+padding:12px;
+background:#8b5a2b;
+border-radius:10px;
+box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+
+.wood img{width:100%;border-radius:8px;}
+
+.top-left{top:80px;left:20px;transform:rotate(-10deg);}
+.top-right{top:80px;right:20px;transform:rotate(10deg);}
+.bottom-left{bottom:80px;left:20px;transform:rotate(8deg);}
+.bottom-right{bottom:80px;right:20px;transform:rotate(-8deg);}
+
+.center{
+top:45%;left:50%;
+transform:translate(-50%,-50%);
+width:300px;
+}
+
+.center-text{
+position:absolute;
+top:75%;
+font-family:'Great Vibes';
+font-size:40px;
+}
+
+.final{
+position:absolute;
+bottom:30px;
+font-size:35px;
+color:red;
+}
+
+/* BUTTON */
+.btn{
+position:absolute;
+bottom:30px;
+padding:12px 25px;
+border:none;border-radius:30px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="music.mp3">
+</audio>
+
+<div class="container">
+
+<!-- SECTION 1 -->
+
+<div id="sec1" class="section">
+<h1 class="main-title">HAPPY BIRTHDAY SATARUPA</h1>
+<img src="clock.png" class="clock">
+<div id="count">3</div>
+<button class="btn" id="btn1" onclick="go(1)">Next Surprize</button>
+</div>
+
+<!-- SECTION 2 -->
+
+<div id="sec2" class="section">
+<div class="note">
+<div class="pin"></div>
+<img src="teddy.png" class="teddy">
+<h1 class="title2">Happy Birthday Beautiful</h1>
+<p>You are the most special person in my life I love you so much</p>
+</div>
+<div class="fire left"></div>
+<div class="fire right"></div>
+<button class="btn" style="background:#ff4081;color:white;" onclick="go(2)">Next Surprize</button>
+</div>
+
+<!-- SECTION 3 -->
+
+<div id="sec3" class="section">
+<h2>📅 May 2026</h2>
+<div class="calendar-box">
+<div class="calendar-header">
+<span>Sun</span><span>Mon</span><span>Tue</span>
+<span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+</div>
+<div class="calendar-grid" id="cal"></div>
+</div>
+<button class="btn" style="background:#4da6ff;color:pink;" onclick="go(3)">Next Surprize</button>
+</div>
+
+<!-- SECTION 4 -->
+
+<div id="sec4" class="section">
+<h1 class="title">A Letter For You</h1>
+<img src="letter.png" class="letter-img" onclick="openLetter()">
+<div class="old-letter" id="letter">
+<p>Happy birthday satarupa aaj tumhara birhday hai tumhe kya laga tha ki tum mujhe chhord ke chali gai to mujhe tumhara birhday yaad nahi rahega mujhe yaad hai aur har chiz tumhari yaad hai jo tumne batai thi mujhe aur aaj tumhare birhday ke dil mai bhagwan se ye dua karunga ki tum lambe samay tak jiyo aur zindagi bhar khush raho tumhe wo saari khushi mile jo tumhe chaiye ho aur wo saari chiz mile jo tumhe chaiye ho bss isi din ke liye mai ruka tha ab mera kaam ho gya hai to ab mai chalta hoon apna khayal rakhna aur khush rehna Happy birthday satarupa... i love you satarup ❤️</p>
+<p style="text-align:right;">By Ankit Kothari</p>
+</div>
+<button class="btn" id="btn4" onclick="go(4)">Next Surprize</button>
+</div>
+
+<!-- SECTION 5 -->
+
+<div id="sec5" class="section">
+<div class="wood top-left"><img src="img1.jpg"></div>
+<div class="wood top-right"><img src="img2.jpg"></div>
+<div class="wood bottom-left"><img src="img3.jpg"></div>
+<div class="wood bottom-right"><img src="img4.jpg"></div>
+
+<div class="wood center">
+<img src="img5.jpg">
+</div>
+
+<h2 class="center-text">Happy Birthday Satarupa</h2>
+<div class="final">I Love You ❤️</div>
+</div>
+
+</div>
+
+<script>
+
+/* COUNTDOWN */
+let c=5;
+let i=setInterval(()=>{
+c--;
+document.getElementById("count").innerText=c;
+if(c==0){
+clearInterval(i);
+document.getElementById("count").innerText="🎉";
+document.getElementById("btn1").style.display="block";
+
+for(let j=0;j<40;j++){
+let p=document.createElement("div");
+p.className="popup";
+p.innerText="🎉";
+p.style.left=Math.random()*100+"%";
+document.body.appendChild(p);
+}
+}
+},1000);
+
+/* SCROLL */
+function go(n){
+document.querySelector(".container").scrollTo({
+top:window.innerHeight*n,
+behavior:"smooth"
+});
+}
+
+/* CALENDAR */
+let cal=document.getElementById("cal");
+for(let i=0;i<5;i++){cal.appendChild(document.createElement("div"));}
+for(let i=1;i<=31;i++){
+let d=document.createElement("div");
+d.className="day";
+d.innerText=i;
+if(i==16)d.classList.add("highlight");
+cal.appendChild(d);
+}
+
+/* LETTER */
+function openLetter(){
+document.getElementById("letter").classList.add("show");
+document.getElementById("btn4").style.display="block";
+
+for(let i=0;i<30;i++){
+let p=document.createElement("div");
+p.className="party";
+p.innerText="🎉";
+p.style.left=Math.random()*100+"%";
+document.body.appendChild(p);
+}
+}
+
+</script>
+
+</body>
+</html>
